@@ -11,11 +11,28 @@ public class FibonacciSeries {
     }
 
     public static void main(String[] args){
+
+        System.out.println("Using Recursion: ");
+
         int n = 0;
 
-        while(n<15){
+        while(n<10){
             System.out.print(fibonacci(n) + " ");
             n++;
+        }
+
+        System.out.println();
+
+        System.out.println("Using while loop: ");
+
+        int first = 0, sec = 1, i = 0;
+
+        while(i<10){
+            System.out.print(first + " ");
+            int next = first + sec;
+            first = sec;
+            sec = next;
+            i++;
         }
     }
 }
