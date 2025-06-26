@@ -12,7 +12,7 @@ public class Palindrome {
         int temp = num;
         int reverseNum = 0;
         while(temp != 0){
-            int ld = temp%10;
+            int ld = temp % 10;
             reverseNum = reverseNum * 10 + ld;
             temp = temp/10;
         }
