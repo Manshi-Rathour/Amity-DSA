@@ -10,10 +10,9 @@ public class MaxSumSubArray {
             int sum = 0;
             for(int j=i; j<n; j++){
                 sum = sum + arr[j];
-
-                if(max < sum){
-                    max = sum;
-                }
+            }
+            if(max < sum){
+                max = sum;
             }
         }
         System.out.println(max);

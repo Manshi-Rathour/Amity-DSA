@@ -33,7 +33,7 @@ public class SpiralMatrix {
 
             // right to left
             if(top <= bottom){
-                for(int i = right; i>=left; i--){
+                for(int i = right; i >= left; i--){
                     System.out.print(arr[bottom][i] + " ");
                 }
                 bottom--;
@@ -41,7 +41,7 @@ public class SpiralMatrix {
 
             // bottom to top
             if(left <= right){
-                for(int i = bottom; i>=top; i--){
+                for(int i = bottom; i >= top; i--){
                     System.out.print(arr[i][left] + " ");
                 }
                 left++;
