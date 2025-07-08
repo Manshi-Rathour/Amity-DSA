@@ -12,7 +12,7 @@ public class DiagonalPrint {
         }
     }
     public static void printDiagonally(int[][] arr){
-        for(int row=0; row< arr.length; row++){
+        for(int row=0; row < arr.length; row++){
             int r = row;
             int c = 0;
             while(r >= 0 && c < arr[0].length){
@@ -22,11 +22,11 @@ public class DiagonalPrint {
             }
         }
 
-        for(int col=1; col<arr[0].length; col++){
+        for(int col=1; col < arr[0].length; col++){
             int r = arr.length - 1;
             int c = col;
 
-            while(c <  arr[0].length && r >= 0){
+            while(c < arr[0].length && r >= 0){
                 System.out.print(arr[r][c] + " ");
                 r--;
                 c++;

@@ -32,20 +32,17 @@ public class SpiralMatrix {
             right--;
 
             // right to left
-            if(top <= bottom){
-                for(int i = right; i >= left; i--){
-                    System.out.print(arr[bottom][i] + " ");
-                }
-                bottom--;
+            for(int i = right; i >= left; i--){
+                System.out.print(arr[bottom][i] + " ");
             }
+            bottom--;
+
 
             // bottom to top
-            if(left <= right){
-                for(int i = bottom; i >= top; i--){
-                    System.out.print(arr[i][left] + " ");
-                }
-                left++;
+            for(int i = bottom; i >= top; i--){
+                System.out.print(arr[i][left] + " ");
             }
+            left++;
         }
     }
     public static void main(String[] args) {
