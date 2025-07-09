@@ -8,8 +8,8 @@ public class PeakIndexInMountainArray {
         while(i<j){
             int mid = (j-i)/2 + i;
 
-            if(arr[mid] > arr[mid+1]) j = mid;
-            else i = mid + 1;
+            if(arr[mid] < arr[mid + 1]) i = mid + 1;
+            else j = mid;
         }
         return i;
     }

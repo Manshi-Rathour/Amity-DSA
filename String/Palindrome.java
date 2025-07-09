@@ -11,16 +11,14 @@ public class Palindrome {
 
         int n = s.length();
 
-        char[] ans = new char[s.length()];
+        StringBuilder sb = new StringBuilder();
 
-        for(int i=0; i<n; i++){
+        for(int i=n-1; i>=0; i--){
             char ch = s.charAt(i);
-            ans[n-1-i] = ch;
+            sb.append(ch);
         }
 
-        String reversed = new String(ans);
-
-        if(s.contains(reversed)){
+        if(s.contains(sb)){
             System.out.println("Palindrome");
         }
         else{
