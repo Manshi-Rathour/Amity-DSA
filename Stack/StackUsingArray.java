@@ -1,7 +1,7 @@
 package Stack;
 
 public class StackUsingArray {
-    private int[] arr;
+    protected int[] arr;
     private int top;
 
     public StackUsingArray(){

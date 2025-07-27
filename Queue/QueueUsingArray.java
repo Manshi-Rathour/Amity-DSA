@@ -23,13 +23,30 @@ public class QueueUsingArray {
     }
     public void enqueue(int val) throws Exception{
         if(isFull()) throw new Exception("queue is full");
-        arr[(size + front) % arr.length] = val;
+        int idx = (size + front) % arr.length;
+        arr[idx] = val;
         size++;
     }
     public int dequeue() throws Exception{
         if(isEmpty()) throw new Exception("queue is empty");
         int t = arr[front];
-        front++;
+        front = (front + 1) % arr.length;
+        size--;
         return t;
+    }
+    public int size(){
+        return size;
+    }
+    public void display(){
+        for(int i=0; i<size; i++){
+            int idx = (front + i) % arr.length;
+            System.out.print(arr[idx] + " ");
+        }
+        System.out.println();
+    }
+    public int peek() throws Exception{
+        if(isEmpty()) throw new Exception("queue is empty");
+
+        return arr[front];
     }
 }
