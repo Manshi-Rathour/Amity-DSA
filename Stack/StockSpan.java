@@ -1,4 +1,4 @@
-package Questions;
+package Stack;
 
 import java.util.*;
 
