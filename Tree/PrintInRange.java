@@ -1,7 +1,5 @@
 package Tree;
 
-import java.util.ArrayList;
-
 public class PrintInRange {
     static class Node{
         int data;
