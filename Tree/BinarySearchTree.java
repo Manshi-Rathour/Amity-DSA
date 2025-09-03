@@ -84,6 +84,7 @@ public class BinarySearchTree {
         }
         return root;
     }
+
     public static Node findInorderSuccessor(Node root){
         while(root.left != null){
             root = root.left;
