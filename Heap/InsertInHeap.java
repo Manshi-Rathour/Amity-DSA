@@ -61,7 +61,7 @@ public class InsertInHeap {
             // step 2 : remove last
             arr.remove(arr.size()-1);
 
-            // step 3 : hepify
+            // step 3 : heapify
             heapify(0);
             return  data;
         }
